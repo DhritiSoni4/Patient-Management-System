@@ -101,9 +101,9 @@ export const AppointmentForm = ({
             cancellationReason: values.cancellationReason,
           },
           type,
+          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone, // ✅ this line added
         };
-
-        const updatedAppointment = await updateAppointment(appointmentToUpdate);
+        
 
         if (updatedAppointment) {
           setOpen && setOpen(false);
