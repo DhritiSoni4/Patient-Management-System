@@ -73,7 +73,6 @@ const RequestSuccess = async ({
           </Link>
         </Button>
 
-        <p className="copyright"></p>
       </div>
     </div>
   );
